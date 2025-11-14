@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    padding-right: 16px;
+    /* height: 100dvh; */
+    /* margin: 160px; */
+    /* padding: 160px 160px; */
+
+    main {
+
+        #section_hero {
+            background-image: url(./assets/img/1_hero/JPG/hero_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            background-position: bottom;
+            /* background-position: right; */
+            /* background-position: left; */
+
+            height: 100dvh;
+
+            display: flex;
+            flex-direction: column;
+
+            font-family: "Raleway";
+            color: white;
+
+            #nav {
+                /* border: 2px solid yellow; */
+                height: 112px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 56px 150px;
+
+                #img_logo {
+                    width: 64px;
+                    height: 64px;
+                }
+
+                #nav_buttons {
+                    /* border: 2px solid rgb(158, 158, 4); */
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    a {
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+
+                    a:hover {
+                        cursor: pointer;
+                        /* scale: 2; */
+                        color: orange;
+                    }
+
+                    .nav_button {
+                        padding-right: 50px;
+                    }
+
+                    .call_us {
+                        background: #9F0908;
+                        border: 1px solid white;
+                        border-radius: 10px;
+
+                        a {
+                            display: flex;
+                            /* gap: 50px; */
+                            text-align: center;
+                        }
+
+                        padding: 10px 15px;
+
+                        #img_phone {
+                            width: 32px;
+                            height: 32px;
+                            padding-right: 5px;
+                        }
+                    }
+
+                    .call_us:hover {
+                        cursor: pointer;
+                        background-color: black;
+
+                        a {
+                            color: red;
+                        }
+                    }
+                }
+            }
+
+            #hero_title {
+                align-self: center;
+                position: absolute;
+                top: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                h1 {
+                    font-size: 96px;
+                    font-weight: bold;
+                }
+
+                div {
+                    padding-top: 16px;
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        #hto {
+            /* background: orange; */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 120px 0;
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 64px;
+
+                font-family: "Raleway";
+                font-style: normal;
+                color: #9F0908;
+                font-size: 80px;
+                font-weight: bold;
+            }
+
+            div {
+                /* background: orange; */
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    img {
+                        width: 128px;
+                        height: 128px;
+                    }
+
+                    h3 {
+                        padding-top: 16px;
+                        font-family: "Economica";
+                        font-size: 56px;
+                        font-weight: bold;
+                        text-align: center;
+
+                    }
+                }
+            }
+
+
+        }
+
+        #om {
+            background-image: url(./assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 120px 0;
+
+            h2 {
+                /* border: 5px solid yellow; */
+                font-family: "Raleway";
+                font-style: normal;
+                color: #9F0908;
+                font-size: 80px;
+                font-weight: bold;
+                padding-bottom: 64px;
+            }
+
+            #middle_food_box {
+                /* background-color: red; */
+                display: flex;
+                flex-direction: row-reverse;
+                margin: 56px 0;
+                gap: 80px;
+
+                #middle_food_infos {
+                    /* margin-right: 80px; */
+                    /* position: relative; */
+                    /* left: 90px; */
+                }
+            }
+
+            #foods_list {
+                /* border: 2px solid red; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .food_boxes {
+                    /* border: 2px solid yellowgreen; */
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    text-align: left;
+
+                    width: 1100px;
+
+                    .food_imgs {
+                        width: 352px;
+                        height: 352px;
+                    }
+
+                    .food_infos {
+                        /* border: 2px solid rgb(205, 156, 50); */
+                        margin-left: 80px;
+                        width: 450px;
+
+                        .food_names {
+                            /* border: 5px solid yellowgreen; */
+                            padding-bottom: 16px;
+                            font-family: "Economica";
+                            font-size: 56px;
+                            font-weight: bold;
+                            text-align: left;
+
+                        }
+
+                        table {
+                            /* border: 2px solid yellowgreen; */
+                            width: 100%;
+                            font-family: "Raleway";
+                            font-style: normal;
+                            color: #675E54;
+                            font-size: 32px;
+                            font-weight: bold;
+
+                            tr {
+                                /* border: 2px solid red; */
+                                /* background: red; */
+
+                                td {
+                                    padding-bottom: 8px;
+                                }
+
+                                .food_prices {
+                                    /* border: 2px solid rgb(21, 6, 2); */
+                                    text-align: right;
+                                }
+
+                                .ingredients {
+                                    /* padding-right: 200px; */
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #fua {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            #fua_title {
+                /* background: yellow; */
+                width: 100%;
+                padding-top: 120px;
+                padding-bottom: 64px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: "Raleway";
+                font-style: normal;
+
+                h2 {
+                    color: #9F0908;
+                    font-size: 80px;
+                    font-weight: bold;
+                    padding-bottom: 8px;
+                }
+
+                #address_field {
+                    /* background: rgb(215, 144, 13); */
+                    display: flex;
+                    align-items: center;
+                    padding-top: 8px;
+
+                    h5 {
+                        color: black;
+                        font-size: 24px;
+                        font-weight: 100;
+                    }
+
+                    #map_marker {
+                        /* background: orange; */
+                    }
+                }
+            }
+        }
+
+    }
+
+    footer {
+        width: 100%;
+        height: 144px;
+        background: #0A141E;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 56px 150px;
+
+        #img_logo {
+            height: 44px;
+        }
+
+        #social_media {
+            width: 140px;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
